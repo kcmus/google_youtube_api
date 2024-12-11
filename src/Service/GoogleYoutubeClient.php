@@ -85,6 +85,10 @@ class GoogleYoutubeClient {
     } catch (\Exception $e) {
       $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
     }
+      console.log('');
+      console.log('*** Youtube API ***');
+      console.log('result');
+      console.log($result);
     return $result;
   }
 
